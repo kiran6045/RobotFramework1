@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.11.1 on win32)" generated="20230207 20:40:52.682" rpa="false" schemaversion="3">
+<suite id="s1" name="NaukriRobot" source="C:\Users\DELL\Documents\Git push\RoboFrame1-main\RoboFrame2\NaukriTest\NaukriRobot.robot">
+<test id="s1-t1" name="NaukriTask" line="16">
+<kw name="Login to Naukri Website" library="NaukriLoginPage">
+<kw name="Open Browser" library="RPA.Browser.Selenium">
+<arg>${naukriURL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230207 20:40:53.476" level="INFO">Opening browser 'chrome' to base url 'https://www.naukri.com/'.</msg>
+<status status="PASS" starttime="20230207 20:40:53.470" endtime="20230207 20:40:56.719"/>
+</kw>
+<kw name="Maximize Browser Window" library="RPA.Browser.Selenium">
+<doc>Maximizes current browser window.</doc>
+<msg timestamp="20230207 20:40:56.726" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=109.0.5414.75)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00B6F243]
+	(No symbol) [0x00AF7FD1]
+	(No symbol) [0x009ED04D]
+	(No symbol) [0x009D2D7A]
+	(No symbol) [0x00A3BE7B]
+	(No symbol) [0x00A4C196]
+	(No symbol) [0x00A38386]
+	(No symbol) [0x00A1163C]
+	(No symbol) [0x00A1269D]
+	GetHandleVerifier [0x00E09A22+2655074]
+	GetHandleVerifier [0x00DFCA24+2601828]
+	GetHandleVerifier [0x00C18C0A+619850]
+	GetHandleVerifier [0x00C17830+614768]
+	(No symbol) [0x00B005FC]
+	(No symbol) [0x00B05968]
+	(No symbol) [0x00B05A55]
+	(No symbol) [0x00B1051B]
+	BaseThreadInitThunk [0x76B27D69+25]
+	RtlInitializeExceptionChain [0x771ABB9B+107]
+	RtlClearBits [0x771ABB1F+191]
+</msg>
+<msg timestamp="20230207 20:40:56.727" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=109.0.5414.75)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00B6F243]
+	(No symbol) [0x00AF7FD1]
+	(No symbol) [0x009ED04D]
+	(No symbol) [0x009D2D7A]
+	(No symbol) [0x00A3BE7B]
+	(No symbol) [0x00A4C196]
+	(No symbol) [0x00A38386]
+	(No symbol) [0x00A1163C]
+	(No symbol) [0x00A1269D]
+	GetHandleVerifier [0x00E09A22+2655074]
+	GetHandleVerifier [0x00DFCA24+2601828]
+	GetHandleVerifier [0x00C18C0A+619850]
+	GetHandleVerifier [0x00C17830+614768]
+	(No symbol) [0x00B005FC]
+	(No symbol) [0x00B05968]
+	(No symbol) [0x00B05A55]
+	(No symbol) [0x00B1051B]
+	BaseThreadInitThunk [0x76B27D69+25]
+	RtlInitializeExceptionChain [0x771ABB9B+107]
+	RtlClearBits [0x771ABB1F+191]
+</msg>
+<status status="FAIL" starttime="20230207 20:40:56.719" endtime="20230207 20:40:56.794"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="RPA.Browser.Selenium">
+<arg>2</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" starttime="20230207 20:40:56.795" endtime="20230207 20:40:56.795"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser.Selenium">
+<arg>id:login_Layer</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230207 20:40:56.796" endtime="20230207 20:40:56.796"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>${usr_loc}</arg>
+<arg>${Usernme}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230207 20:40:56.796" endtime="20230207 20:40:56.797"/>
+</kw>
+<kw name="Input Password" library="RPA.Browser.Selenium">
+<arg>${pwd_loc}</arg>
+<arg>${pwd}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230207 20:40:56.797" endtime="20230207 20:40:56.797"/>
+</kw>
+<kw name="Click Button" library="RPA.Browser.Selenium">
+<arg>${btn_loc}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230207 20:40:56.798" endtime="20230207 20:40:56.798"/>
+</kw>
+<status status="FAIL" starttime="20230207 20:40:53.470" endtime="20230207 20:40:56.799"/>
+</kw>
+<kw name="Check highlighting popup asked for suggestion" library="NaukriLoginPage">
+<status status="NOT RUN" starttime="20230207 20:40:56.801" endtime="20230207 20:40:56.801"/>
+</kw>
+<kw name="Search required details by entering Keyword" library="NaukriSearchPage">
+<status status="NOT RUN" starttime="20230207 20:40:56.801" endtime="20230207 20:40:56.802"/>
+</kw>
+<kw name="Get Element Count" library="RPA.Browser.Selenium">
+<var>${Count}</var>
+<arg>${Roles_loc}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="NOT RUN" starttime="20230207 20:40:56.802" endtime="20230207 20:40:56.803"/>
+</kw>
+<if>
+<branch type="IF" condition="${Count} &lt;= 0">
+<kw name="Log" library="BuiltIn">
+<arg>Locator is changed or page is not loaded properly</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230207 20:40:56.806" endtime="20230207 20:40:56.808"/>
+</kw>
+<status status="NOT RUN" starttime="20230207 20:40:56.805" endtime="20230207 20:40:56.808"/>
+</branch>
+<branch type="ELSE">
+<kw name="Get All Values" library="User_defined_Library">
+<var>${filename}</var>
+<arg>${Roles_loc}</arg>
+<arg>${descrip_loc}</arg>
+<arg>${company_loc}</arg>
+<arg>${next_loc}</arg>
+<status status="NOT RUN" starttime="20230207 20:40:56.809" endtime="20230207 20:40:56.810"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${filename}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" starttime="20230207 20:40:56.810" endtime="20230207 20:40:56.811"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${filename}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230207 20:40:56.811" endtime="20230207 20:40:56.811"/>
+</kw>
+<status status="NOT RUN" starttime="20230207 20:40:56.808" endtime="20230207 20:40:56.811"/>
+</branch>
+<status status="NOT RUN" starttime="20230207 20:40:56.804" endtime="20230207 20:40:56.812"/>
+</if>
+<status status="FAIL" starttime="20230207 20:40:53.470" endtime="20230207 20:40:56.812">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=109.0.5414.75)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00B6F243]
+	(No symbol) [0x00AF7FD1]
+	(No symbol) [0x009ED04D]
+	(No symbol) [0x009D2D7A]
+	(No symbol) [0x00A3BE7B]
+	(No symbol) [0x00A4C196]
+	(No symbol) [0x00A38386]
+	(No symbol) [0x00A1163C]
+	(No symbol) [0x00A1269D]
+	GetHandleVerifier [0x00E09A22+2655074]
+	GetHandleVerifier [0x00DFCA24+2601828]
+	GetHandleVerifier [0x00C18C0A+619850]
+	GetHandleVerifier [0x00C17830+614768]
+	(No symbol) [0x00B005FC]
+	(No symbol) [0x00B05968]
+	(No symbol) [0x00B05A55]
+	(No symbol) [0x00B1051B]
+	BaseThreadInitThunk [0x76B27D69+25]
+	RtlInitializeExceptionChain [0x771ABB9B+107]
+	RtlClearBits [0x771ABB1F+191]
+</status>
+</test>
+<status status="FAIL" starttime="20230207 20:40:52.682" endtime="20230207 20:40:56.814"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="NaukriRobot">NaukriRobot</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230207 20:40:56.726" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=109.0.5414.75)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00B6F243]
+	(No symbol) [0x00AF7FD1]
+	(No symbol) [0x009ED04D]
+	(No symbol) [0x009D2D7A]
+	(No symbol) [0x00A3BE7B]
+	(No symbol) [0x00A4C196]
+	(No symbol) [0x00A38386]
+	(No symbol) [0x00A1163C]
+	(No symbol) [0x00A1269D]
+	GetHandleVerifier [0x00E09A22+2655074]
+	GetHandleVerifier [0x00DFCA24+2601828]
+	GetHandleVerifier [0x00C18C0A+619850]
+	GetHandleVerifier [0x00C17830+614768]
+	(No symbol) [0x00B005FC]
+	(No symbol) [0x00B05968]
+	(No symbol) [0x00B05A55]
+	(No symbol) [0x00B1051B]
+	BaseThreadInitThunk [0x76B27D69+25]
+	RtlInitializeExceptionChain [0x771ABB9B+107]
+	RtlClearBits [0x771ABB1F+191]
+</msg>
+</errors>
+</robot>
